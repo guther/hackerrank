@@ -14,7 +14,7 @@ function Articles({ articles }) {
         <tbody>
           {articles.map(({ title, upvotes, date }, index) => {
             return (
-              <tr data-testid="article" key={String(index)}>
+              <tr data-testid="article" key={index}>
                 <td data-testid="article-title">{title}</td>
                 <td data-testid="article-upvotes">{upvotes}</td>
                 <td data-testid="article-date">{date}</td>
