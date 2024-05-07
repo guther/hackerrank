@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.2820" tests="13" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-05-07T18:18:14" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="rateLimiterOptions" timestamp="2024-05-07T18:18:14" tests="6" file="/home/ubuntu/tests/hackerrank/02fa758d-b602-4422-b692-45a22f7ee886/test/index.spec.js" time="0.0020" failures="0">
+    <testcase name="rateLimiterOptions should have maxRequests property" time="0.0010" classname="should have maxRequests property">
+    </testcase>
+    <testcase name="rateLimiterOptions should have timeWindow property" time="0.0000" classname="should have timeWindow property">
+    </testcase>
+    <testcase name="rateLimiterOptions maxRequests should be a number" time="0.0010" classname="maxRequests should be a number">
+    </testcase>
+    <testcase name="rateLimiterOptions timeWindow should be a number" time="0.0000" classname="timeWindow should be a number">
+    </testcase>
+    <testcase name="rateLimiterOptions maxRequests should be equal to 5" time="0.0000" classname="maxRequests should be equal to 5">
+    </testcase>
+    <testcase name="rateLimiterOptions timeWindow should be equal to 1000" time="0.0000" classname="timeWindow should be equal to 1000">
+    </testcase>
+  </testsuite>
+  <testsuite name="rateLimiterMiddleware" timestamp="2024-05-07T18:18:14" tests="7" file="/home/ubuntu/tests/hackerrank/02fa758d-b602-4422-b692-45a22f7ee886/test/index.spec.js" time="1.2800" failures="0">
+    <testcase name="rateLimiterMiddleware should have x-ratelimit-limit header" time="0.0250" classname="should have x-ratelimit-limit header">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should have x-ratelimit-remaining header" time="0.0060" classname="should have x-ratelimit-remaining header">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should have x-ratelimit-reset header" time="0.0030" classname="should have x-ratelimit-reset header">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should allow all requests when totalRequests is within the rate limit" time="0.0470" classname="should allow all requests when totalRequests is within the rate limit">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should allow the exact number of requests as the rate limit" time="0.0610" classname="should allow the exact number of requests as the rate limit">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should block only the requests exceeding the rate limit" time="0.0700" classname="should block only the requests exceeding the rate limit">
+    </testcase>
+    <testcase name="rateLimiterMiddleware should allow requests after the rate limit reset time has passed" time="1.0680" classname="should allow requests after the rate limit reset time has passed">
+    </testcase>
+  </testsuite>
+</testsuites>
